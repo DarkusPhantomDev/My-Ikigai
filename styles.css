@@ -1,0 +1,95 @@
+:root {
+  --color-blue: hsl(187deg, 100%, 42%);
+  --color-red: red;
+  --color-green: green;
+  --color-orange: orange;
+  --color-indigo: indigo;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: gray;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    ". pasion ."
+    "talento proposito deseo"
+    ". trabajo .";
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+}
+
+.box {
+  border: 5px solid var(--color-blue);
+  border-radius: 50%;
+  padding: 30px 10px;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 1px 20px black;
+  background: white;
+}
+
+.box__pasion {
+  grid-area: pasion;
+  border-color: var(--color-red);
+}
+
+.box__pasion h2 {
+  color: var(--color-red);
+}
+
+.box__talento {
+  grid-area: talento;
+  border-color: var(--color-green);
+}
+
+.box__talento h2 {
+  color: var(--color-green);
+}
+
+.box__proposito {
+  grid-area: proposito;
+  width: 65%;
+}
+
+.box__deseo {
+  grid-area: deseo;
+  border-color: var(--color-orange);
+}
+
+.box__deseo h2 {
+  color: var(--color-orange);
+}
+
+.box__trabajo {
+  grid-area: trabajo;
+  border-color: var(--color-indigo);
+}
+
+.box__trabajo h2 {
+  color: var(--color-indigo);
+}
+
+h2 {
+  text-decoration: underline;
+  color: hsl(187deg, 100%, 42%);
+}
+
+li {
+  width: 90%;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
